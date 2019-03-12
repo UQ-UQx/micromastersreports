@@ -1,20 +1,18 @@
 
 
-SELECT  student_id, username, email, name, buslead1x_verified, buslead1x_completed,  buslead2x_verified, buslead2x_completed, buslead3x_verified, buslead3x_completed, buslead4x_verified, buslead4x_completed, no_completed_courses as no_verified_passed, no_audited_passed
-FROM  buslead_coursecompletion ORDER bY no_completed_courses DESC;
+SELECT  student_id, username, email, name, buslead1x_enrollment_track, buslead1x_passed,  buslead2x_enrollment_track, buslead2x_passed, buslead3x_enrollment_track, buslead3x_passed, buslead4x_enrollment_track, buslead4x_passed, buslead5x_enrollment_track, buslead5x_passed, no_certificate_eligible, no_audited_passed, country
+FROM  buslead_coursecompletion ORDER bY no_certificate_eligible DESC;
 
-SELECT  student_id, username, email, name, corpinn1x_verified, corpinn1x_completed,  corpinn2x_verified, corpinn2x_completed, corpinn3x_verified, corpinn3x_completed, corpinn4x_verified, corpinn4x_completed, no_completed_courses as no_verified_passed, no_audited_passed
-FROM  corpinn_coursecompletion ORDER bY no_completed_courses DESC;
+SELECT  student_id, username, email, name, corpinn1x_enrollment_track, corpinn1x_passed,  corpinn2x_enrollment_track, corpinn2x_passed, corpinn3x_enrollment_track, corpinn3x_passed, corpinn4x_enrollment_track, corpinn4x_passed, corpinn5x_enrollment_track, corpinn5x_passed, no_certificate_eligible, no_audited_passed, country
+FROM  corpinn_coursecompletion ORDER bY no_certificate_eligible DESC;
 
-SELECT  student_id, username, email, name, engy1x_verified as ENGY0x_verified, engy1x_completed as ENGY0x_completed, engy2x_verified as ENGY1x_verified, engy2x_completed as ENGY1x_completed, engy3x_verified as ENGY2x_verified, engy3x_completed as ENGY2x_completed, engy4x_verified as ENGY3x_verified, engy4x_completed as ENGY3x_completed, no_completed_courses as no_verified_passed, no_audited_passed
-FROM  engy_coursecompletion ORDER bY no_completed_courses DESC;
+SELECT  student_id, username, email, name, engy0x_enrollment_track, engy0x_passed, engy1x_enrollment_track, engy1x_passed, engy2x_enrollment_track, engy2x_passed, engy3x_enrollment_track, engy3x_passed, engycapx_enrollment_track, engycapx_passed, no_certificate_eligible, no_audited_passed, country
+FROM  engy_coursecompletion ORDER bY no_certificate_eligible DESC;
 
-SELECT  student_id, username, email, name, lgdm1x_verified, lgdm1x_completed,  lgdm2x_verified, lgdm2x_completed,  lgdm3x_verified, lgdm3x_completed,  lgdm4x_verified, lgdm4x_completed, lgdm5x_verified, lgdm5x_completed, no_completed_courses as no_verified_passed, no_audited_passed, survey_oncampus, country
-FROM  lgdm_coursecompletion ORDER bY no_completed_courses DESC;
+SELECT  student_id, username, email, name, lgdm1x_enrollment_track, lgdm1x_passed, lgdm2x_enrollment_track, lgdm2x_passed, lgdm3x_enrollment_track, lgdm3x_passed, lgdm4x_enrollment_track, lgdm4x_passed, lgdm5x_enrollment_track, lgdm5x_passed, no_certificate_eligible, no_audited_passed, country
+FROM  lgdm_coursecompletion ORDER bY no_certificate_eligible DESC;
 
 
-
-// Create Indexes to speed up queries
 
 CREATE INDEX StudentIDIndex ON Learners(student_id);
 
