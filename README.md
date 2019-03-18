@@ -8,7 +8,7 @@
 		
 ##### 2) Dynamic Email.ipynb --Preparing for dynamic mailout
 
-The following uses the micromasters course _buslead_ as example
+### The following uses the micromasters course _buslead_ as example
 
 ## Before running 
 #### 1) Make the following director
