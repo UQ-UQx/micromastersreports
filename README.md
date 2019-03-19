@@ -2,7 +2,7 @@
 
 ##### The University of Queensland - Institute for Teaching and Learning Innovation (ITaLI)
 
-# This project provides a set of tools (Jupyter Notebooks) of data processing and student completion reports for edX MicroMasters. MicroMasters consist of 4 courses and a capstone project. Each of the courses are re-run at regular intervals in a year. This repo contains code to generate a report to calculate the number of courses that a student has verified and completed (i.e passed). The calculated data can then also be used to send dynamic emails (based on templates) to encourage students to enroll in the next course.
+#### This project provides a set of tools (Jupyter Notebooks) of data processing and student completion reports for edX MicroMasters. MicroMasters consist of 4 courses and a capstone project. Each of the courses are re-run at regular intervals in a year. This repo contains code to generate a report to calculate the number of courses that a student has verified and completed (i.e passed). The calculated data can then also be used to send dynamic emails (based on templates) to encourage students to enroll in the next course.
 
 ##### 1) Create_MM_Report.ipynb --Creating MicroMasters Report
 		
