@@ -1,17 +1,17 @@
 # micromastersreports -- Tools for MicroMasters edX
 
-##### The University of Queensland - Institute for Teaching and Learning Innovation
+##### The University of Queensland - Institute for Teaching and Learning Innovation (ITaLI)
 
-### This project provides a set of tools (Jupyter Notebooks) of data processing and data analytics for MicroMasters of edX
+### This project provides a set of tools (Jupyter Notebooks) of data processing and student completion reports for edX MicroMasters. MicroMasters consist of 4 courses and a capstone project. Each of the courses are re-run at regular intervals in a year. This repo contains code to generate a report to calculate the number of courses that a student has verified and completed (i.e passed). The calculated data can then also be used to send dynamic emails (based on templates) to encourage students to enroll in the next course.
 
 ##### 1) Create_MM_Report.ipynb --Creating MicroMasters Report
 		
 ##### 2) Dynamic Email.ipynb --Preparing for dynamic mailout
 
-### The following uses the micromasters course _buslead_ as example
+### In these instructions the Business Leadership MicroMasters (i.e. _buslead_) is used as an example
 
 ## Before running 
-#### 1) Make the following director
+#### 1) Make the following folders
 ```bash
 $ mkdir ./csv
 $ mkdir ./data
@@ -19,7 +19,7 @@ $ mkdir ./data/buslead
 $ mkdir ./database
 ```
 #### 2) Download data
-Go to the edX website and download all runs of buslead profile_info csv files and grade_report csv files and save them to ./data/buslead
+Go to the edX website and download profile_info and grade_report csv files for all runs of the MicroMasters courese and save them to ./data/buslead
 
 #### 3) Prepare the database file
 ```bash
@@ -29,7 +29,7 @@ $ mv ./database/dummymmcourse_verified.db ./database/buslead_verified.db
 
 #### 4) Edit Create_MM_Report.ipynb 
 * Set `mmCourse = 'buslead'`
-* Make sure the variable `mmCourseMeta` having the `buslead` key, such as
+* Make sure the variable `mmCourseMeta` having the `buslead` key and grade to pass the course, such as
 	```python
 	mmCoursesMeta = {
 		'buslead': {
@@ -54,7 +54,7 @@ Running this notebook will
 
 * The column 'no_certificate_eligible' records how many courses the student already achieved 'certificated eligible' in the micromaster courses.
 
-* You may export the table `buslead_coursecompletion` as the micromaster report
+* You may export the table `buslead_coursecompletion` as the micromaster report. Example queries are included in the queries.sql file.
 
 ## Run Dynamic Email.ipynb 
 This notebook try to find the following two sets of students
