@@ -57,6 +57,7 @@ Running this notebook will
 * You may export the table `buslead_coursecompletion` as the micromaster report. Example queries are included in the queries.sql file.
 
 ## Run Dynamic Email.ipynb 
+Before running, make sure the notebook 'Create_MM_Report' had been run and the variable 'pointed_course_instances' had been set.
 This notebook try to find the following two sets of students
 * The student whose enrollment track is 'audit' and his/her grade is above the passing line.
 We will send emails to such kind of students to suggest them to transfer their track from 'audit' to 'verify'.
