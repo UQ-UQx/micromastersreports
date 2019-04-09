@@ -1,0 +1,36 @@
+Dear {{item.student_name}},
+{% if item.no_certificate_eligible == 3 %}
+Congratulations on your achievements in three of the four courses in the Leadership in Global Development Series! This places you in a special cohort of learners only steps away from earning the Leadership in Global Development MicroMasters (R) credential.
+{% elif item.no_certificate_eligible != 0 %}
+Congratulations on your achievements in {{item.no_certificate_eligible}} of the four courses in the Leadership in Global Development Series! You have started the journey towards obtaining the Leadership in Global Development MicroMasters (R) credential.
+{% endif %}
+{% if item.trigger_course_verified == 0 %}
+You now need to verify your enrolment in order for the {{item.trigger_course_title}} ({{item.trigger_course_link}}) course to be recognised as part of the Leadership in Global Development MicroMasters (R). A verified certificate can also be shared on social media (e.g. LinkedIn) and provide proof for an employer, school, or other institution that you have successfully completed this course.
+{% endif %}
+{% if item.trigger_course_verified == 1 %}
+You now may share your accomplishment on LinkedIn, Facebook or other social media profile! Click here (http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/SFD_certificates.html#share-a-certificate-on-linkedin) for instructions on how to share your certificate.
+{% endif %}
+We encourage you to successfully complete {{item.next_course_title}} ({{item.next_course_link}}) as a verified learner.
+As you know the MicroMasters (R) credential forms one part of the entry pathway to The University of Queensland’s (UQ) exclusive on-campus Master of Leadership in Global Development (MLGD) (https://future-students.uq.edu.au/study/program/Master-of-Leadership-in-Global-Development-5669). We are currently accepting applications for admission to the program and invite you to apply (https://future-students.uq.edu.au/apply).
+
+For more information or specific questions regarding the Capstone Scholarship, the MicroMasters or the Master of Leadership in Global Development, please email issr.education@uq.edu.au, telephone +61 7 3346 7471, or visit https://future-students.uq.edu.au/mlgd.
+
+Kind regards,
+Professor Mark Moran 
+
+Program Director
+MicroMasters (R) and Master of Leadership in Global Development 
+Institute for Social Science Research, University of Queensland 
+CRICOS Provider No. 00025B
+Websites: https://www.uq.edu.au | https://www.issr.uq.edu.au | http://www.issr.uq.edu.au/mfsas
+
+Explore the UQx Course Catalogue
+https://www.edx.org/school/uqx
+
+Copyright (C) 2018 The University of Queensland (https://www.uq.edu.au), All Rights Reserved.
+MicroMasters (R) and the MicroMasters logo are trademarks of edX Inc. All Rights Reserved.
+
+You've received this email because you indicated you would like to receive email updates from UQx, an edX partner.
+Unsubscribe: {{ item.email }}
+
+
