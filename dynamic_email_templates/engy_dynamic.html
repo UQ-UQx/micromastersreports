@@ -639,7 +639,7 @@ and (min-width: 620px){.wrapper h1{}.wrapper h1{font-size:26px !important;line-h
 
             <div style="font-size: 12px;font-style: normal;font-weight: normal;" align="center">
               <a href="https://www.edx.org/micromasters/uqx-leadership-global-development" target="_blank">
-                <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" src="https://tools.ceit.uq.edu.au/uqxmailouts/sept2017/lgdm_cohorts/images/lgdmbanner.jpg" alt="News For LGDM Learners" width="600">
+                <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" src="https://tools.ceit.uq.edu.au/uqxmailouts/images/uqx-top2.jpg" alt="News For LGDM Learners" width="600">
               </a>
             </div>
           </div>
@@ -658,32 +658,37 @@ and (min-width: 620px){.wrapper h1{}.wrapper h1{font-size:26px !important;line-h
 
 </div>
 <!-- Start -->
-
+<div style="Margin-left: 20px;Margin-right: 20px;">
+  <h3 style='Margin-top: 0;Margin-bottom: 12px;font-style: normal;font-weight: normal;color: #4badd1;font-size: 16px;line-height: 24px;font-family: "Open Sans",sans-serif;'><span style="color:#000000"><strong>
+    Congratulations - you are now one step closer to a MicroMasters&reg; credential!
+  </strong></span></h3>
+</div>
 <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
-<p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: left;" lang="x-size-16">Dear LGDM Learner,</p>
-
+<p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: left;" lang="x-size-16">Dear Learner</p>
 
 {% if item.no_certificate_eligible == 3 %}
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-Congratulations on your achievements in three of the four courses in the Leadership in Global Development Series! This places you in a special cohort of learners only steps away from earning the Leadership in Global Development MicroMasters&reg; credential.
+Congratulations on your achievements in three of the four courses in the Sustainable Energy Series! This places you in a special cohort of learners only steps away from earning the Sustainable Energy MicroMasters&reg; credential.
 </p>
 {% elif item.no_certificate_eligible != 0 %}
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-Congratulations on your achievements in {{item.no_certificate_eligible}} of the four courses in the Leadership in Global Development Series! You've started the journey towards obtaining the Leadership in Global Development MicroMasters&reg; credential.
+Congratulations on your achievements in {{item.no_certificate_eligible}} of the four courses in the Sustainable Energy Series! You have started the journey towards obtaining the Sustainable Energy MicroMasters&reg; credential.
 </p>
 {% else %}
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-Congratulations on your achievements in the Leadership in Global Development Series! You've started the journey towards obtaining the Leadership in Global Development MicroMasters&reg; credential.
+Congratulations on your achievements in the Sustainable Energy Series! You've started the journey towards obtaining the Sustainable Energy MicroMasters&reg; credential.
 </p>
 {% endif %}
 
 {% if item.trigger_course_verified  == 0 %}
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-You now need to verify your enrolment in order for the <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="{{item.trigger_course_link}}" target="_blank">{{item.trigger_course_title}}</a> course to be recognised as part of the Leadership in Global Development MicroMasters&reg;. A verified certificate can also be shared on social media (e.g. LinkedIn) and provide proof for an employer, school, or other institution that you have successfully completed this course.
+You now need to verify your enrolment in order for the <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="{{item.trigger_course_link}}" target="_blank">{{item.trigger_course_title}}</a> course to be recognised as part of the Sustainable Energy MicroMasters&reg;. A verified certificate can also be shared on social media (e.g. LinkedIn) and provide proof for an employer, school, or other institution that you have successfully completed this course.
 </p>
-{% elif item.trigger_course_verified == 1 %}
+{% endif %}
+
+{% if item.trigger_course_verified == 1 %}
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-You now may share your accomplishment on LinkedIn, Facebook or other social media profile! <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/SFD_certificates.html#share-a-certificate-on-linkedin" target="_blank">Click here</a> for instructions on how to share your certificate.
+You now may share your accomplishment on LinkedIn, Facebook or other social media profile! <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/SFD_certificates.html#share-a-certificate-on-linkedin" target="_blank">Click here</a>  for instructions on how to share your certificate.
 </p>
 {% endif %}
 
@@ -691,21 +696,24 @@ You now may share your accomplishment on LinkedIn, Facebook or other social medi
 We encourage you to successfully complete <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="{{item.next_course_link}}" target="_blank">{{item.next_course_title}}</a> as a verified learner.
 </p>
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-As you know the MicroMasters&reg; credential forms one part of the entry pathway to The University of Queensland's (UQ) exclusive on-campus <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/study/program/Master-of-Leadership-in-Global-Development-5669" target="_blank">Master of Leadership in Global Development</a> (MLGD). We are currently accepting applications for admission to the program and invite you to <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/apply" target="_blank">apply</a>.
+As you may be aware, the MicroMasters&reg; credential is an entry pathway to the on-campus <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684" target="_blank">Master of Sustainable Energy</a> (MSE)  offered by The University of Queensland (UQ), St Lucia Campus, Brisbane, Queensland, Australia. We are accepting applications now for admission to the Master of Sustainable Energy program and invite you to <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/apply" target="_blank">apply</a> (select domestic or international student from top right hand button).
 </p>
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-For more information or specific questions regarding the Capstone Scholarship, the MicroMasters or the Master of Leadership in Global Development, please email issr.education@uq.edu.au, telephone +61 7 3346 7471, or visit <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/mlgd" target="_blank">https://future-students.uq.edu.au/mlgd</a>.
+  For more information or specific questions regarding the Capstone Assessment, the MicroMasters or the Master of Sustainable Energy, please email studentenquiries@chemeng.uq.edu.au, telephone +61 7 3346 8723, or visit <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684" target="_blank">https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684</a>.
 </p>
 
-<p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">Kind regards,</p>
+<p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">Kind regards</p>
 <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-  Professor Mark Moran<br/>
-  Program Director<br/>
-  MicroMasters&reg; and Master of Leadership in Global Development <br/>
-  Institute for Social Science Research, University of Queensland <br/>
+  Professor Peta Ashworth
 <br/>
-  CRICOS Provider No. 00025B <br/>
-Websites: <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://www.uq.edu.au" target="_blank">https://www.uq.edu.au</a> | <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://www.issr.uq.edu.au" target="_blank">https://www.issr.uq.edu.au</a> | <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="http://www.issr.uq.edu.au/mfsas" target="_blank">http://www.issr.uq.edu.au/mfsas</a> <br/>
+Program Director<br/>
+MicroMasters&reg; and Master of Sustainable Energy <br/>
+School of Chemical Engineering, University of Queensland <br/>
+CRICOS Provider No. 00025B <br/>
+Websites: <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://www.uq.edu.au" target="_blank">https://www.uq.edu.au</a>
+<a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684" target="_blank">https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684</a>
+<a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #3da7bf;" href="https://scholarships.uq.edu.au/search/scholarships?f[0]=type:scholarship&f[1]=field_enrolment_status:2362&f[2]=field_academic_career_term:1924" target="_blank">https://scholarships.uq.edu.au/search/scholarships?f[0]=type:scholarship&f[1]=field_enrolment_status:2362&f[2]=field_academic_career_term:1924</a>
+
 </p>
 </div>
 
@@ -782,7 +790,7 @@ Websites: <a style="text-decoration: underline;transition: opacity 0.1s ease-in;
             <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
               <div>
                 You've received this email because you indicated you would like to receive email updates from UQx, an edX partner. |
-                <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #93a6ad;" href="{{item.unsubscribe_link}}">Unsubscribe</a>
+                <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #93a6ad;" href="{{ item.unsubscribe_link }}">Unsubscribe</a>
               </div>
             </div>
           </div>

@@ -1,0 +1,41 @@
+Dear Learner,
+{% if item.no_certificate_eligible == 3 %}
+Congratulations on your achievements in three of the four courses in the Sustainable Energy Series! This places you in a special cohort of learners only steps away from earning the Sustainable Energy MicroMasters (R) credential.
+{% elif item.no_certificate_eligible != 0 %}
+Congratulations on your achievements in {{item.no_certificate_eligible}} of the four courses in the Sustainable Energy Series! You have started the journey towards obtaining the Sustainable Energy MicroMasters (R) credential.
+{% else %}
+Congratulations on your achievements in the Sustainable Energy Series! You've started the journey towards obtaining the Sustainable Energy MicroMasters (R) credential.
+{% endif %}
+
+
+{% if item.trigger_course_verified == 0 %}
+You now need to verify your enrolment in order for the {{item.trigger_course_title}} ({{item.trigger_course_link}}) course to be recognised as part of the Sustainable Energy MicroMasters (R). A verified certificate can also be shared on social media (e.g. LinkedIn) and provide proof for an employer, school, or other institution that you have successfully completed this course.
+{% endif %}
+{% if item.trigger_course_verified == 1 %}
+You now may share your accomplishment on LinkedIn, Facebook or other social media profile! Click here (http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/SFD_certificates.html#share-a-certificate-on-linkedin) for instructions on how to share your certificate.
+{% endif %}
+
+We encourage you to successfully complete {{item.next_course_title}} ({{item.next_course_link}}) as a verified learner.
+
+As you may be aware, the MicroMasters (R) credential is an entry pathway to the on-campus Master of Sustainable Energy (https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684) (MSE)  offered by The University of Queensland (UQ), St Lucia Campus, Brisbane, Queensland, Australia. We are accepting applications now for admission to the Master of Sustainable Energy program and invite you to apply (https://future-students.uq.edu.au/apply) (select domestic or international student from top right hand button).
+
+
+For more information or specific questions regarding the Capstone Assessment, the MicroMasters or the Master of Sustainable Energy, please email studentenquiries@chemeng.uq.edu.au, telephone +61 7 3346 8723, or visit https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684
+
+Kind regards,
+
+Professor Peta Ashworth
+
+Program Director
+MicroMasters (R) and Master of Sustainable Energy 
+School of Chemical Engineering, University of Queensland 
+CRICOS Provider No. 00025B 
+Websites: https://www.uq.edu.au | 
+https://future-students.uq.edu.au/study/program/Master-of-Sustainable-Energy-5684  |
+https://scholarships.uq.edu.au/search/scholarships?f[0]=type:scholarship&f[1]=field_enrolment_status:2362&f[2]=field_academic_career_term:1924
+
+Copyright (C) 2018 The University of Queensland (https://www.uq.edu.au), All Rights Reserved.
+MicroMasters (R) and the MicroMasters logo are trademarks of edX Inc. All Rights Reserved.
+
+You've received this email because you indicated you would like to receive email updates from UQx, an edX partner.
+Unsubscribe: {{ item.email }}

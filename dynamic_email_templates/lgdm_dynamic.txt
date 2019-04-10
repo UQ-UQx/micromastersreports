@@ -3,6 +3,8 @@ Dear {{item.student_name}},
 Congratulations on your achievements in three of the four courses in the Leadership in Global Development Series! This places you in a special cohort of learners only steps away from earning the Leadership in Global Development MicroMasters (R) credential.
 {% elif item.no_certificate_eligible != 0 %}
 Congratulations on your achievements in {{item.no_certificate_eligible}} of the four courses in the Leadership in Global Development Series! You have started the journey towards obtaining the Leadership in Global Development MicroMasters (R) credential.
+{% else %}
+Congratulations on your achievements in the Leadership in Global Development Series! You've started the journey towards obtaining the Leadership in Global Development MicroMasters (R) credential.
 {% endif %}
 {% if item.trigger_course_verified == 0 %}
 You now need to verify your enrolment in order for the {{item.trigger_course_title}} ({{item.trigger_course_link}}) course to be recognised as part of the Leadership in Global Development MicroMasters (R). A verified certificate can also be shared on social media (e.g. LinkedIn) and provide proof for an employer, school, or other institution that you have successfully completed this course.
