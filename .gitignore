@@ -2,7 +2,7 @@
 *.DS_Store
 
 data/
-databases/
+databases*/
 csv/
 
 # Byte-compiled / optimized / DLL files
